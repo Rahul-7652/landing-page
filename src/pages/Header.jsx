@@ -15,7 +15,7 @@ const Header = () => {
     <div className="bg-gray-100 w-full h-16 flex items-center justify-between px-4">
       {/* Logo Section */}
       <div className="text-lg font-bold">
-        <img src="" alt="Logo" />
+        <img src="src\assets\code-lint-jpg-logo.jpg" alt="Logo" className='w-14 rounded-full' />
       </div>
 
       {/* Menu for larger screens */}
@@ -48,7 +48,7 @@ const Header = () => {
         {menuItems.map((item) => (
           <span
             key={item}
-            className="cursor-pointer text-gray-800 hover:text-gray-500 border-slate-800 border-2 rounded bg-black text-white px-1 py-1 gap-0 w-full"
+            className="cursor-pointer hover:text-gray-500 border-slate-800 border-2 rounded bg-black text-white px-1 py-1 gap-0 w-full"
             onClick={closeMenu}
           >
             {item}
