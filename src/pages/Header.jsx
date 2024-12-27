@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import { IoReorderThreeOutline, IoCloseOutline } from 'react-icons/io5';
+import '.././index.css';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const menuItems = ['Home', 'About', 'Contact Us'];
+  const menuItems = ['Join Now','Home', 'About', 'Contact Us'];
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
   const closeMenu = () => setMenuOpen(false);
+
+
 
   return (
     <div className="bg-gray-100 w-full h-16 flex items-center justify-between px-4">
@@ -16,7 +19,7 @@ const Header = () => {
       </div>
 
       {/* Menu for larger screens */}
-      <div className="hidden md:flex justify-center flex-1 space-x-8">
+      <div className="hidden md:flex justify-center flex-1 space-x-8 text-xl">
         {menuItems.map((item) => (
           <span
             key={item}
@@ -25,16 +28,19 @@ const Header = () => {
             {item}
           </span>
         ))}
+        
       </div>
 
+      <button className='hidden md:block button-size'>Join now</button>
+
       {/* Hamburger Menu Toggle */}
-      <div className="md:hidden" onClick={toggleMenu}>
+      <div className="md:hidden " onClick={toggleMenu}>
         {menuOpen ? <IoCloseOutline size={30} /> : <IoReorderThreeOutline size={30} />}
       </div>
 
       {/* Overlay and Slide-in Menu */}
       <div
-        className={`fixed top-0 right-0 h-full bg-gray-200 w-64 shadow-lg z-20 flex flex-col items-start pt-16 px-6 space-y-4 transition-transform duration-[600ms] ${
+        className={`fixed top-0 right-0 h-full bg-gray-200 w-52 shadow-lg z-20 flex flex-col  items-start pt-10 px-5 space-y-1 transition-transform duration-[600ms]  ${
           menuOpen ? 'translate-x-0' : 'translate-x-full'
           
         }`}
@@ -42,7 +48,7 @@ const Header = () => {
         {menuItems.map((item) => (
           <span
             key={item}
-            className="cursor-pointer text-gray-800 hover:text-gray-500"
+            className="cursor-pointer text-gray-800 hover:text-gray-500 border-slate-800 border-2 rounded bg-black text-white px-1 py-1 gap-0 w-full"
             onClick={closeMenu}
           >
             {item}
