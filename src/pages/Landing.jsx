@@ -112,21 +112,16 @@ export default function Landing() {
             className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
           />
         </div>
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-          <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-            <div className="relative rounded-full px-3 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-              Announcing our next round of funding.{' '}
-              <a href="#" className="font-semibold text-indigo-600">
-                <span aria-hidden="true" className="absolute inset-0" />
-                Read more <span aria-hidden="true">&rarr;</span>
-              </a>
-            </div>
-          </div>
+        <div className="mx-auto max-w h-auto flex flex-col items-centerjustify-around md:flex-row gap-20">
+          
           <div className="text-center">
+          <div className="hidden sm:mb-8 sm:flex sm:justify-center">
+           
+          </div>
             <h1 className="text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
               Lorem ipsum dolor 
             </h1>
-            <p className="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8 text-justify">
+            <p className="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8 text-justify md:tex-2xl ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo laudantium harum at ex nobis quaerat est ut, autem, dolore, soluta illum quas magnam? Amet dignissimos dicta, error ut quisquam a!
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
@@ -140,6 +135,9 @@ export default function Landing() {
                 Learn more <span aria-hidden="true">→</span>
               </a>
             </div>
+          </div>
+          <div className='flex items-center justify-center h-auto max-w'>
+            <img src="src\assets\Programming-amico.png" alt="" className=' md:w-1/2 md:h-auto h-auto w-auto  ' />
           </div>
         </div>
         <div
