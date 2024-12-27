@@ -42,6 +42,16 @@ const Card = () => {
       image: "https://via.placeholder.com/150",
       disigination: "Software Engineer",
     },
+    {
+      id: 3,
+      title: "Top 10 programming languages in 2024",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.",
+      author: "John Smith",
+      date: "Oct 5",
+      image: "https://via.placeholder.com/150",
+      disigination: "Software Engineer",
+    },
   ];
 
   return (
